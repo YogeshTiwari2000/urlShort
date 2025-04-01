@@ -1,0 +1,22 @@
+<nav class="nav">
+    <h1 class="main-head">URL Shortener</h1>
+    <p class="sub-head">Simplify your URLs and make them more shareable.</p>
+</nav>
+<div class="container">
+
+    <div class="form">
+        <p class="para-head"> Shortened URL</p>
+        <input type="text" [(ngModel)]="longUrl" placeholder="Enter long URL" class="input1" />
+
+        <button (click)="add()">Short</button>
+        <div *ngIf="shortUrl" class="result">
+            <p>Redirect URL: <a [href]="shortUrl.redirectURL" target="_blank">{{ shortUrl.redirectURL }}</a></p>
+            <p>Short ID: http://localhost:8001/{{ shortUrl.id }}</p>
+
+        </div>
+        <!-- <div *ngFor="let item of shortUrl;let i=index">
+            <p>Redirect URL: <a [href]="item.redirectURL" target="_blank">{{item.redirectURL}}</a></p>
+            <p>Short ID: {{item.id}}</p>
+        </div> -->
+    </div>
+</div>
