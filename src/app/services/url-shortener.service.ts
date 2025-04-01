@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class UrlShortenerService {
-  private apiUrl = 'http://localhost:8001/url'; // Your backend endpoint
+  private apiUrl = 'https://urlbackend-qnzx.onrender.com/url'; // Your backend endpoint
 
   constructor(private http: HttpClient) { }
 

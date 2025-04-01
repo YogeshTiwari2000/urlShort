@@ -11,7 +11,7 @@
         <button (click)="add()">Short</button>
         <div *ngIf="shortUrl" class="result">
             <p>Redirect URL: <a [href]="shortUrl.redirectURL" target="_blank">{{ shortUrl.redirectURL }}</a></p>
-            <p>Short ID: http://localhost:8001/{{ shortUrl.id }}</p>
+            <p>Short ID: https://urlbackend-qnzx.onrender.com/{{ shortUrl.id }}</p>
 
         </div>
         <!-- <div *ngFor="let item of shortUrl;let i=index">
