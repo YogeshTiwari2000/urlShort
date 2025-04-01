@@ -1,0 +1,6 @@
+{
+  "routes": {
+    "/urlShort": {},
+    "/urlShort/url-short": {}
+  }
+}
