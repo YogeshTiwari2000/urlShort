@@ -45,3 +45,4 @@ Thumbs.db
 # Google Cloud Service Account Credentials 
 
 urlBackend/firebase-service-account.json
+urlBackend/environment.env
