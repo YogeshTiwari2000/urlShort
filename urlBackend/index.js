@@ -32,6 +32,9 @@ app.get('/:shortId', async (req, res) => {
 
 import cors from 'cors';
 app.use(cors()); // Enable CORS for all routes
+app.use(cors({
+    origin: ['https://yogeshtiwari2000.github.io/urlShort/url-short', 'http://localhost:3000']
+}));
 
 app.use(express.json());
 app.use('/url', urlRoute);
